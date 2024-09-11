@@ -1,0 +1,62 @@
+				File Structure
+
+__tests__
+->App-test.tsx:
+It's a kind of typescript file.
+Help in testing apps, mostly they are written by the testers.
+
+.bundle
+->Config
+These are just configuration files we never ever touch them.
+
+android
+Mostly we never go in 
+->build.gradle
+In future we would be coming in this file to make sdk versions, dependencies,and other stuff.
+->local.properties
+Here the path of android sdk is defined and sometime it isn't formed automatically then we have to make it.
+	sdk.dir =/Users/apple/Library/Android/sdk				(for ios)
+	sdk.dir = C\:\\Users\\USERNAME\\AppData\\Local\\Android\\Sdk		(for Windows)
+
+ios
+Mostly we never go in 
+->Podfile
+Here we install all of our new dependencies, packages.
+
+node_modules
+All the require dependencies that are required for our app liked to javascript is here
+Sometime there are issues so just uninstall the file and re-install(npm install)
+
+.gitignore
+We add all the file here that aren't required to be pushed on github
+
+.watchmanconfig
+It give the feature of hot relode
+
+app.json
+Android, ios takes the name of the application from here
+
+App.tsx(Major File)
+Don't compare it with app.json, it is all the meat and potato of the app
+Study it in next chapter in depth
+
+babel.config.js
+Metro is used in it
+Just like all other bundlers, it combines all the file and make it runnable for the browsers, mobiles.
+
+Gemfile
+Again a ruby baised file for ios development
+
+tsconfig.json
+It's a type script configuration file which allows us to have strong types and somebody needs me to tell from where I shoud get these types, this file help us in that task
+
+package.json
+Contain all the dependencies
+
+index.js
+The first file which is open by metro builder is this file i.e. first file to be open
+	import {AppRegistry} from 'react-native';
+	import App from './App';					//App.tsx is called here
+	import {name as appName} from './app.json';			//Imports the file name from app.json
+
+	AppRegistry.registerComponent(appName, () => App);		//This says first file to open up is appName which is taken from App
