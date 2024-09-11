@@ -1,1 +1,8 @@
+Guide for android app 
 
+-> Open Command Prompt in the folder where you wanted to make project
+npx react-native init appName
+
+-> cd .\appName\.
+
+-> npx react-native run-android
