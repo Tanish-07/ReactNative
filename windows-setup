@@ -1,0 +1,28 @@
+A proper setup tutorial for windows app in react native.
+
+Install the development dependencies
+                                      
+-> https://microsoft.github.io/react-native-windows/docs/rnw-dependencies
+-> In elivated power shell window i.e. power shell on Run as Administration.
+-> Make all the requirements manually downloaded in your system while in the development.
+
+Code:
+Set-ExecutionPolicy Unrestricted -Scope Process -Force;
+iex (New-Object System.Net.WebClient).DownloadString('https://aka.ms/rnw-vs2022-deps.ps1');
+
+
+To Initailise a destop app
+                            
+-> https://microsoft.github.io/react-native-windows/docs/getting-started
+-> https://learn.microsoft.com/en-us/windows/dev-environment/javascript/react-native-for-windows
+-> Open Command Pannel in the folder
+Code:
+npx react-native init app-name
+
+-> Shift to the app directory
+Code:
+cd .\app-name\
+
+-> npm install --save react-native-windows@^0.75.0
+-> npx react-native init-windows --overwrite
+-> npx react-native run-windows
