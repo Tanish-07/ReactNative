@@ -1,0 +1,28 @@
+			01-simple demo app
+
+Since, we know App.tsx is the main file
+
+First:
+We will try to understand the auto generated code by React-Native 
+
+	import React from 'react';			//Here we are importing react
+	import type {PropsWithChildren} from 'react';
+	import {
+  		SafeAreaView,               //Ensures that the content is rendered within the safe area boundaries of a device (e.g., avoiding notches and status bars).
+  		ScrollView,                 //A scrollable container that can hold multiple child components and allows vertical scrolling.
+  		StatusBar,                  //Manages the appearance of the status bar (e.g., style, background color).
+  		StyleSheet,                 //Provides a way to create styles for your components.
+  		Text,
+  		useColorScheme,             //A hook that returns the current color scheme (light or dark mode).
+  		View,                       //A container component that can hold other components and apply styles.
+	} from 'react-native';
+
+	import {                      //These imports are from the react-native/Libraries/NewAppScreen module, which is part of the default React Native template.    
+  		Colors,
+  		DebugInstructions,
+  		Header,
+  		LearnMoreLinks,
+  		ReloadInstructions,
+	} from 'react-native/Libraries/NewAppScreen';   
+
+	export default App;
