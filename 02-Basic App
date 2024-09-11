@@ -1,0 +1,101 @@
+This is App.tsx file(Main File)
+
+import React from "react";
+import {
+    Text,
+    View,
+    SafeAreaView,
+    ScrollView,
+} from 'react-native';
+
+function App(){
+  return(
+    <SafeAreaView>
+      <ScrollView><View>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+
+      <Text>
+        Hello world
+      </Text>
+      <Text>
+        Hello world
+      </Text>
+    </View></ScrollView>
+    
+  </SafeAreaView>
+  )
+}
+
+export default App;
