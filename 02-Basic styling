@@ -1,0 +1,41 @@
+[App.tsx]
+
+import React from "react";
+import {
+  View,
+  SafeAreaView,
+  Text,
+  StyleSheet,                         //Responsible for styling the components 
+  useColorScheme,                     //By this we can use different color schemes ligh/dark .. 
+} from 'react-native';
+
+function App() {
+  const isDarkMode = useColorScheme() === 'dark'   //This way we define dark theme in the app
+
+  return (
+    //This way you can add style to any view
+    //In text we utilised terniary operator Plus how to utilise color theme
+    <View style={styles.container}>
+      <Text style={isDarkMode? styles.whiteText: styles.darkText}>
+        Tanish
+      </Text>
+    </View>
+
+  )
+}
+
+const styles = StyleSheet.create({                  //Here we are making design
+  container: {                                      //We can make as many design as required with any names like container, eliment, item
+    flex: 1,
+    alignItems: 'center',                           //In react-native it works for left to right
+    justifyContent: 'flex-start'                    //In react-native it works for top to bottom
+  },
+  whiteText: {
+    color: '#ffffff'
+  },
+  darkText: {
+    color: '#000000'
+  }
+})
+
+export default App;
